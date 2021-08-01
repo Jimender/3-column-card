@@ -1,0 +1,32 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    font-size: 1.5rem;
+    border: 2px solid $color-neutral-main;
+    background-color: $color-neutral-main;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    @include respond(phone-s) {
+      padding: 1rem 2.8rem;
+    }
+  }
+
+  &:hover {
+    border: 2px solid $color-neutral-main;
+    border-radius: 10rem;
+    background-color: transparent;
+    color: $color-neutral-main;
+  }
+
+  &__more--1 {
+    color: $color-primary-sedan;
+  }
+  &__more--2 {
+    color: $color-primary-suv;
+  }
+  &__more--3 {
+    color: $color-primary-luxury;
+  }
+}

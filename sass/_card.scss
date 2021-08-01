@@ -1,0 +1,67 @@
+.card-box {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 60%;
+  margin: 6rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  max-width: 114rem;
+
+  @include respond(tab-land) {
+    width: 75%;
+  }
+
+  @include respond(tab-port) {
+    grid-template-columns: none;
+    // grid-template-rows: auto auto;
+    width: 55%;
+    margin: 8rem 0;
+  }
+
+  @include respond(phone-land) {
+    width: 88%;
+  }
+
+  // @include respond(phone-s) {
+  //   width: 88%;
+  // }
+
+  .card {
+    &__content {
+      padding: 4rem;
+
+      @include respond(phone-s) {
+        padding: 4.5rem 4.5rem 4.5rem 4.7rem;
+      }
+    }
+
+    &__button {
+      margin-bottom: 1.5rem;
+    }
+
+    &--1 {
+      background-color: $color-primary-sedan;
+    }
+    &--2 {
+      background-color: $color-primary-suv;
+    }
+    &--3 {
+      background-color: $color-primary-luxury;
+    }
+  }
+
+  .img {
+    height: 3.7rem;
+    margin-bottom: 2.6rem;
+
+    @include respond(tab-port) {
+      height: 4.2rem;
+      margin-bottom: 3rem;
+    }
+
+    // @include respond(phone-s) {
+    //   height: 4.2rem;
+    //   margin-bottom: 3rem;
+    // }
+  }
+}

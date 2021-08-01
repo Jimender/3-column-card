@@ -1,0 +1,38 @@
+h1 {
+  font-family: $font-primary;
+  font-size: 3.5rem;
+  color: $color-neutral-main;
+  text-transform: uppercase;
+  margin-bottom: 2.6rem;
+
+  @include respond(tab-port) {
+    font-size: 4rem;
+  }
+
+  // @include respond(phone-s) {
+  //   font-size: 4rem;
+  // }
+}
+
+p {
+  font-size: 1.4rem;
+  color: $color-neutral-para;
+  line-height: 2.3rem;
+  margin-bottom: 8rem;
+
+  @include respond(tab-port) {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    margin-bottom: 6rem;
+  }
+
+  @include respond(phone-land) {
+    margin-bottom: 4rem;
+  }
+
+  // @include respond(phone-s) {
+  //   // font-size: 1.5rem;
+  //   // line-height: 2.4rem;
+  //   margin-bottom: 4rem;
+  // }
+}

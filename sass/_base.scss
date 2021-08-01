@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-secondary;
+  background-color: $color-neutral-main;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(tab-port) {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  // @include respond(phone-s) {
+  //   height: 100%;
+  //   flex-direction: column;
+  // }
+}

@@ -1,0 +1,114 @@
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3.5rem;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  margin-bottom: 2.6rem; }
+  @media (max-width: 56.25em) {
+    h1 {
+      font-size: 4rem; } }
+
+p {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 2.3rem;
+  margin-bottom: 8rem; }
+  @media (max-width: 56.25em) {
+    p {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      margin-bottom: 6rem; } }
+  @media (max-width: 36.5625em) {
+    p {
+      margin-bottom: 4rem; } }
+
+.card-box {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 60%;
+  margin: 6rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  max-width: 114rem; }
+  @media (max-width: 68.75em) {
+    .card-box {
+      width: 75%; } }
+  @media (max-width: 56.25em) {
+    .card-box {
+      grid-template-columns: none;
+      width: 55%;
+      margin: 8rem 0; } }
+  @media (max-width: 36.5625em) {
+    .card-box {
+      width: 88%; } }
+  .card-box .card__content {
+    padding: 4rem; }
+    @media (max-width: 23.4375em) {
+      .card-box .card__content {
+        padding: 4.5rem 4.5rem 4.5rem 4.7rem; } }
+  .card-box .card__button {
+    margin-bottom: 1.5rem; }
+  .card-box .card--1 {
+    background-color: #e38826; }
+  .card-box .card--2 {
+    background-color: #006970; }
+  .card-box .card--3 {
+    background-color: #004241; }
+  .card-box .img {
+    height: 3.7rem;
+    margin-bottom: 2.6rem; }
+    @media (max-width: 56.25em) {
+      .card-box .img {
+        height: 4.2rem;
+        margin-bottom: 3rem; } }
+
+.btn, .btn:link, .btn:visited {
+  font-size: 1.5rem;
+  border: 2px solid #f2f2f2;
+  background-color: #f2f2f2;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  transition: all 0.2s; }
+  @media (max-width: 23.4375em) {
+    .btn, .btn:link, .btn:visited {
+      padding: 1rem 2.8rem; } }
+
+.btn:hover {
+  border: 2px solid #f2f2f2;
+  border-radius: 10rem;
+  background-color: transparent;
+  color: #f2f2f2; }
+
+.btn__more--1 {
+  color: #e38826; }
+
+.btn__more--2 {
+  color: #006970; }
+
+.btn__more--3 {
+  color: #004241; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #f2f2f2; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 56.25em) {
+    .container {
+      height: 100%;
+      flex-direction: column; } }
